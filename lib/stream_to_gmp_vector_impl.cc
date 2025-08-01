@@ -26,7 +26,7 @@ namespace dpd {
 
 stream_to_gmp_vector::sptr stream_to_gmp_vector::make(const std::vector<int>& dpd_params)
 {
-    return gnuradio::get_initial_sptr(new stream_to_gmp_vector_impl(dpd_params));
+    return gnuradio::make_block_sptr<stream_to_gmp_vector_impl>(dpd_params);
 }
 
 

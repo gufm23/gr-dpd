@@ -41,8 +41,7 @@ LMS_postdistorter::sptr LMS_postdistorter::make(const std::vector<int>& dpd_para
                                                 std::string method,
                                                 gr_complexd learning_rate)
 {
-    return gnuradio::get_initial_sptr(
-        new LMS_postdistorter_impl(dpd_params, iter_limit, method, learning_rate));
+    return gnuradio::make_block_sptr<LMS_postdistorter_impl>(dpd_params, iter_limit, method, learning_rate);
 }
 
 

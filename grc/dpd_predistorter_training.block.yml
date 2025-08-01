@@ -33,6 +33,6 @@ outputs:
   dtype: complex
   optional: true
 templates:
-  imports: import dpd
+  imports: from gnuradio import dpd
   make: dpd.predistorter_training(${dpd_params}, ${mode}, ${tap})
 file_format: 1

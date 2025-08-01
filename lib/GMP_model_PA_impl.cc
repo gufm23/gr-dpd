@@ -64,14 +64,14 @@ GMP_model_PA::sptr GMP_model_PA::make(int model_param1,
                                       const std::vector<gr_complex>& coeff1,
                                       const std::vector<gr_complex>& coeff2)
 {
-    return gnuradio::get_initial_sptr(new GMP_model_PA_impl(model_param1,
+    return gnuradio::make_block_sptr<GMP_model_PA_impl>(model_param1,
                                                             model_param2,
                                                             model_param3,
                                                             model_param4,
                                                             model_param5,
                                                             mode,
                                                             coeff1,
-                                                            coeff2));
+                                                            coeff2);
 }
 
 

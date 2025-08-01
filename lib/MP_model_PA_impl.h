@@ -8,7 +8,7 @@
 #ifndef INCLUDED_DPD_MP_MODEL_PA_IMPL_H
 #define INCLUDED_DPD_MP_MODEL_PA_IMPL_H
 
-#include <dpd/MP_model_PA.h>
+#include <gnuradio/dpd/MP_model_PA.h>
 #include <math.h>
 #include <algorithm>
 #include <armadillo>

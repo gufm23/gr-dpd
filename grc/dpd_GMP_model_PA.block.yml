@@ -2,7 +2,7 @@ id: dpd_GMP_model_PA
 label: GMP model PA
 category: '[DPD]'
 templates:
-  imports: import dpd
+  imports: from gnuradio import dpd
   make: dpd.GMP_model_PA(${model_param1}, ${model_param2}, ${model_param3}, ${model_param4},
     ${model_param5}, ${mode}, ${coeff1}, ${coeff2})
 parameters:

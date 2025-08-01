@@ -54,8 +54,7 @@ MP_model_PA::sptr MP_model_PA::make(int Order,
                                     std::string Mode,
                                     const std::vector<gr_complex>& Coeff)
 {
-    return gnuradio::get_initial_sptr(
-        new MP_model_PA_impl(Order, Mem_Depth, Mode, Coeff));
+    return gnuradio::make_block_sptr<MP_model_PA_impl>(Order, Mem_Depth, Mode, Coeff);
 }
 
 

@@ -9,7 +9,7 @@
 #define INCLUDED_DPD_STREAM_TO_MESSAGE_H
 
 #include <gnuradio/sync_block.h>
-#include <dpd/api.h>
+#include <gnuradio/dpd/api.h>
 
 namespace gr {
 namespace dpd {
@@ -23,7 +23,7 @@ namespace dpd {
 class DPD_API stream_to_message : virtual public gr::sync_block
 {
 public:
-    typedef boost::shared_ptr<stream_to_message> sptr;
+    typedef std::shared_ptr<stream_to_message> sptr;
 
     /*!
      * \brief Make stream_to_message block

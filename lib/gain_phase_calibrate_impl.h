@@ -8,7 +8,7 @@
 #ifndef INCLUDED_DPD_GAIN_PHASE_CALIBRATE_IMPL_H
 #define INCLUDED_DPD_GAIN_PHASE_CALIBRATE_IMPL_H
 
-#include <dpd/gain_phase_calibrate.h>
+#include <gnuradio/dpd/gain_phase_calibrate.h>
 
 namespace gr {
 namespace dpd {

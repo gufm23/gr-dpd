@@ -8,7 +8,7 @@
 #ifndef INCLUDED_DPD_RLS_POSTDISTORTER_IMPL_H
 #define INCLUDED_DPD_RLS_POSTDISTORTER_IMPL_H
 
-#include <dpd/RLS_postdistorter.h>
+#include <gnuradio/dpd/RLS_postdistorter.h>
 #include <armadillo>
 using namespace arma;
 

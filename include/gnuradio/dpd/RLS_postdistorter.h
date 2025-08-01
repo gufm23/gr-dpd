@@ -9,7 +9,7 @@
 #define INCLUDED_DPD_RLS_POSTDISTORTER_H
 
 #include <gnuradio/sync_block.h>
-#include <dpd/api.h>
+#include <gnuradio/dpd/api.h>
 
 namespace gr {
 namespace dpd {
@@ -37,7 +37,7 @@ namespace dpd {
 class DPD_API RLS_postdistorter : virtual public gr::sync_block
 {
 public:
-    typedef boost::shared_ptr<RLS_postdistorter> sptr;
+    typedef std::shared_ptr<RLS_postdistorter> sptr;
 
     /*!
      * \brief Make RLS_postdistorter block

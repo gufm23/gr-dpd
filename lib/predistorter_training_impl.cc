@@ -28,8 +28,7 @@ predistorter_training::make(const std::vector<int>& dpd_params,
                             std::string mode,
                             const std::vector<gr_complex>& taps)
 {
-    return gnuradio::get_initial_sptr(
-        new predistorter_training_impl(dpd_params, mode, taps));
+    return gnuradio::make_block_sptr<predistorter_training_impl>(dpd_params, mode, taps);
 }
 
 
@@ -65,10 +64,9 @@ predistorter_training_impl::predistorter_training_impl(
         for (int i = 0; i < taps.size(); i++) {
             d_predistorter_training_colvec(i) = taps[i];
         }
-    // setup input message port
     message_port_register_in(pmt::mp("taps"));
     set_msg_handler(pmt::mp("taps"),
-                    boost::bind(&predistorter_training_impl::get_taps, this, _1));
+    [this](pmt::pmt_t msg) { this->get_taps(msg); });
 }
 
 /*

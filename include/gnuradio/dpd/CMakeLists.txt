@@ -18,5 +18,5 @@ install(FILES
     stream_to_gmp_vector.h
     gain_phase_calibrate.h
     stream_to_message.h
-    LMS_postdistorter.h DESTINATION include/dpd
+    LMS_postdistorter.h DESTINATION include/gnuradio/dpd
 )

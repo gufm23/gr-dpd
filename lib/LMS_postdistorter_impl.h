@@ -21,7 +21,7 @@
 #ifndef INCLUDED_DPD_LMS_POSTDISTORTER_IMPL_H
 #define INCLUDED_DPD_LMS_POSTDISTORTER_IMPL_H
 
-#include <dpd/LMS_postdistorter.h>
+#include <gnuradio/dpd/LMS_postdistorter.h>
 #include <armadillo>
 using namespace arma;
 

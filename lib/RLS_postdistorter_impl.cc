@@ -27,7 +27,7 @@ namespace dpd {
 RLS_postdistorter::sptr RLS_postdistorter::make(const std::vector<int>& dpd_params,
                                                 int iter_limit)
 {
-    return gnuradio::get_initial_sptr(new RLS_postdistorter_impl(dpd_params, iter_limit));
+    return gnuradio::make_block_sptr<RLS_postdistorter_impl>(dpd_params, iter_limit);
 }
 
 

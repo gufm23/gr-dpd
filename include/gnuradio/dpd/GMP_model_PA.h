@@ -9,7 +9,7 @@
 #define INCLUDED_DPD_GMP_MODEL_PA_H
 
 #include <gnuradio/sync_block.h>
-#include <dpd/api.h>
+#include <gnuradio/dpd/api.h>
 
 namespace gr {
 namespace dpd {
@@ -38,7 +38,7 @@ namespace dpd {
 class DPD_API GMP_model_PA : virtual public gr::sync_block
 {
 public:
-    typedef boost::shared_ptr<GMP_model_PA> sptr;
+    typedef std::shared_ptr<GMP_model_PA> sptr;
 
     /*!
      * \brief Make a GMP_model_PA block

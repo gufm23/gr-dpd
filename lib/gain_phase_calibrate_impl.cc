@@ -16,7 +16,7 @@ namespace dpd {
 
 gain_phase_calibrate::sptr gain_phase_calibrate::make()
 {
-    return gnuradio::get_initial_sptr(new gain_phase_calibrate_impl());
+    return gnuradio::make_block_sptr<gain_phase_calibrate_impl>();
 }
 
 
